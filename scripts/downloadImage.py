@@ -31,7 +31,7 @@ def process_csv(csv_file_path, output_folder):
             counter += 1
 
 
-csv_file_path = 'image_links.csv'
+csv_file_path = 'OriginalImageURLs.csv'
 output_folder = 'output_images'
 
 process_csv(csv_file_path, output_folder)
