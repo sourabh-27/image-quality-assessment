@@ -8,7 +8,7 @@ from PIL import Image
 
 def download_and_convert_to_jpg(url, output_folder, counter):
     response = requests.get(url)
-    hotelId = 2629134
+    hotelId = 2629110
     if response.status_code == 200:
         image = Image.open(BytesIO(response.content))
         image = image.convert("RGB")
@@ -31,7 +31,7 @@ def process_csv(csv_file_path, output_folder):
             counter += 1
 
 
-csv_file_path = '2629134_images.csv'
+csv_file_path = '2629110_images.csv'
 output_folder = 'output_images'
 
 process_csv(csv_file_path, output_folder)
