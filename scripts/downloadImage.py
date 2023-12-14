@@ -8,7 +8,7 @@ from PIL import Image
 
 def download_and_convert_to_jpg(url, output_folder, counter):
     response = requests.get(url)
-    hotelId = 795224
+    hotelId = 1337376
     if response.status_code == 200:
         image = Image.open(BytesIO(response.content))
         image = image.convert("RGB")
